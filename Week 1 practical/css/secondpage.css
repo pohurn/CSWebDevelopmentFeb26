@@ -1,34 +1,37 @@
-body
+body{
+    background-color: lightblue;
+    font-family: Arial;
+    text-align: center;
 
-{
-background-color lightblue;
-font-family Arial;
-text-align center;
 }
 
 .card{
-
-width:300px
-margin:auto;
-background-color white;
-padding:20px;
-border-radius:15px;
-box-shadow:5px 5px 10px gray
+    width:300px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px gray
 
 }
 
-button{
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 
-background blue;
-color white;
-padding:10px
-border:none;
-cursor:pointer;
+button{
+    background: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 
 }
 
 button:hover{
 
-background-color darkblue;
+    background-color: darkblue;
 
 }
