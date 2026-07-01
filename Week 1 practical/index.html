@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile Card</title>
+    <link rel="stylesheet" href="./css/firstpage.css"> <!-- this is how we link external css -->
+</head>
+<body>
+
+    <div class="card">
+        <img src="./images/Naruto.png" alt="Profile Picture">
+
+        <h1 id="studentName">Naruto</h1>
+        <h3>Web Development Student</h3>
+
+        <p>
+            Hello! I am learning HTML, CSS and JavaScript.
+            This is my first interactive webpage.
+        </p>
+
+        <div id="moreInfo" class="hidden">
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Course:</strong> Computer Science</p>
+            <p><strong>Hobby:</strong> Coding and Gaming</p>
+        </div>
+
+        <button onclick="showMore()">Show / Hide More Info</button>
+        <button onclick="changeTheme()">Change Theme</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
