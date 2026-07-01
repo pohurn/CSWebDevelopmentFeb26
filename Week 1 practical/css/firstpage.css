@@ -4,7 +4,9 @@ body {
     text-align: center;
     padding-top: 50px;
 }
-
+div {
+    margin-bottom: 10px;
+}
 .card {
     background-color: white;
     width: 350px;
@@ -15,26 +17,26 @@ body {
 }
 
 .card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
 }
 
 h1 {
-    color: #333;
+    color: #183bc8;
 }
 
 h3 {
-    color: #777;
+    color: #3f8a90;
 }
 
 p {
-    color: #555;
+    color: #04718f;
     font-size: 16px;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #384b4f;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -52,7 +54,7 @@ button:hover {
 }
 
 .dark-mode {
-    background-color: #222;
+    background-color: #120000;
 }
 
 .dark-mode .card {
