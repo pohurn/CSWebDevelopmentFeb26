@@ -1,27 +1,30 @@
-body
-
-{
-background-color lightblue;
-font-family Arial;
-text-align center;
+body {
+background-color: lightblue;
+font-family: Arial, sans-serif;
+text-align: center;
+    padding-top:50px;
 }
 
-.card{
+.card {
 
-width:300px
+width:300px;
 margin:auto;
-background-color white;
+background-color:white;
 padding:20px;
 border-radius:15px;
-box-shadow:5px 5px 10px gray
+box-shadow:5px 5px 10px gray;
 
 }
-
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 button{
 
-background blue;
-color white;
-padding:10px
+background:blue;
+color:white;
+padding:10px;
 border:none;
 cursor:pointer;
 
@@ -29,6 +32,6 @@ cursor:pointer;
 
 button:hover{
 
-background-color darkblue;
+background-color:darkblue;
 
 }
