@@ -1,14 +1,12 @@
-body
-
-{
-background-color lightblue;
-font-family Arial;
-text-align center;
+body{
+background-color: lightblue;
+font-family: Arial;
+text-align: center;
 }
 
 .card{
 
-width:300px
+width:200px;
 margin:auto;
 background-color white;
 padding:20px;
@@ -19,8 +17,8 @@ box-shadow:5px 5px 10px gray
 
 button{
 
-background blue;
-color white;
+background: blue;
+color: white;
 padding:10px
 border:none;
 cursor:pointer;
@@ -29,6 +27,6 @@ cursor:pointer;
 
 button:hover{
 
-background-color darkblue;
+background-color: darkblue;
 
 }
