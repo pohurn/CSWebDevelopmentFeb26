@@ -2,6 +2,24 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  font-family: "Dm Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(500deg, #313971, #2f3e8f, #cdb5d8);
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  animation: gradient-animation 20s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 ul {
@@ -13,6 +31,8 @@ ul {
 
 a {
   text-decoration: none;
+  color: #fafafa;
+  font-weight: bold;
 }
 
 header {
