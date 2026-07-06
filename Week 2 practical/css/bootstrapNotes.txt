@@ -1,0 +1,210 @@
+=========================
+BOOTSTRAP CSS FRAMEWORK
+=========================
+
+Please read more here:
+https://www.w3schools.com/whatis/whatis_bootstrap.asp
+
+=> you will be able to see the different classes that have been predefined for css and js.
+e.g:
+tooltip, danger, success, etc...
+
+What is Bootstrap?
+------------------
+
+Bootstrap is a free and open-source CSS framework that helps developers create modern, responsive, and attractive websites quickly.
+
+Instead of writing lots of CSS yourself, Bootstrap provides ready-made styles and components.
+
+--------------------------------------------------
+
+Why Use Bootstrap?
+------------------
+
+- Faster website development
+- Mobile-friendly (Responsive)
+- Professional-looking design
+- Easy to learn
+- Free to use
+- Works on all modern browsers
+
+--------------------------------------------------
+
+What Does Bootstrap Provide?
+----------------------------
+
+Bootstrap includes many ready-made components such as:
+
+- Buttons
+- Navigation bars (Navbar)
+- Forms
+- Cards
+- Tables
+- Alerts
+- Modals (Popup windows)
+- Carousels (Image sliders)
+- Grid system
+- Icons (Bootstrap Icons)
+
+--------------------------------------------------
+
+How to Use Bootstrap
+--------------------
+
+1. Link the Bootstrap CSS file.
+
+<head>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+</head>
+
+--------------------------------------------------
+
+2. (Optional) Add Bootstrap JavaScript
+
+Before the closing </body> tag:
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+--------------------------------------------------
+
+Example 1 - Bootstrap Button
+----------------------------
+
+<button class="btn btn-primary">
+    Submit
+</button>
+
+--------------------------------------------------
+
+Example 2 - Bootstrap Alert
+---------------------------
+
+<div class="alert alert-success">
+    Registration Successful!
+</div>
+
+--------------------------------------------------
+
+Example 3 - Bootstrap Form
+
+<input
+type="text"
+class="form-control"
+placeholder="Enter your name">
+
+--------------------------------------------------
+
+Example 4 - Bootstrap Card
+
+<div class="card" style="width:18rem;">
+    <div class="card-body">
+        <h5 class="card-title">John Doe</h5>
+        <p class="card-text">
+            Web Developer
+        </p>
+    </div>
+</div>
+
+--------------------------------------------------
+
+Bootstrap Grid System
+---------------------
+
+Bootstrap divides a page into 12 columns.
+
+Example:
+
+<div class="row">
+
+    <div class="col-6">
+        Left Side
+    </div>
+
+    <div class="col-6">
+        Right Side
+    </div>
+
+</div>
+
+Result:
+-----------------------
+| Left | Right |
+-----------------------
+
+--------------------------------------------------
+
+Common Bootstrap Classes
+-------------------------
+
+Container
+container
+
+Button
+btn
+btn-primary
+btn-success
+btn-danger
+btn-warning
+
+Text
+text-center
+text-start
+text-end
+
+Background
+bg-primary
+bg-success
+bg-danger
+bg-warning
+bg-dark
+
+Spacing
+m-3   (Margin)
+p-3   (Padding)
+
+Rounded corners
+rounded
+
+Shadow
+shadow
+
+--------------------------------------------------
+
+Advantages
+----------
+
+- Saves development time
+- Responsive by default
+- Professional design
+- Large collection of ready-made components
+- Easy to customize
+- Excellent documentation
+
+--------------------------------------------------
+
+Disadvantages
+-------------
+
+- Websites may look similar if not customized
+- Larger file size than writing your own CSS
+- Learning Bootstrap classes takes time
+
+--------------------------------------------------
+
+Bootstrap vs CSS
+----------------
+
+CSS
+- You write every style yourself.
+- Gives full control over design.
+
+Bootstrap
+- Provides ready-made styles.
+- Faster development.
+- Less code to write.
+
+--------------------------------------------------

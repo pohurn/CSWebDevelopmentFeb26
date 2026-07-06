@@ -1,0 +1,151 @@
+========================
+COOKIES IN WEB DEVELOPMENT
+========================
+
+What is a Cookie?
+-----------------
+A cookie is a small file stored in the user's browser that allows a website to remember information such as login sessions,
+ language preferences, and user settings. Cookies are automatically sent to the server whenever the browser communicates 
+ with the website.
+
+
+Examples:
+- Login session
+- Language preference
+- Shopping cart
+- User preferences
+
+--------------------------------------------------
+
+Real-life Example
+-----------------
+
+Imagine you visit a hotel.
+
+The receptionist gives you a room card.
+
+Whenever you come back, you simply show the card instead of registering again.
+
+A cookie works in the same way.
+
+The website stores a small "ID card" in your browser so it can recognize you the next time you visit.
+
+--------------------------------------------------
+
+Why are Cookies Used?
+---------------------
+
+- Keep users logged in
+- Remember language settings
+- Remember shopping cart items
+- Store user preferences
+- Track website usage
+
+--------------------------------------------------
+
+How Cookies Work
+----------------
+
+1. User visits a website.
+2. The server creates a cookie.
+3. The browser stores the cookie.
+4. Every future request automatically sends the cookie back to the server.
+5. The server recognizes the user.
+
+--------------------------------------------------
+
+Creating a Cookie with JavaScript
+---------------------------------
+
+document.cookie = "username=Navin";
+
+--------------------------------------------------
+
+Creating a Cookie with Expiration Date
+--------------------------------------
+
+document.cookie =
+"username=Navin; expires=Fri, 31 Dec 2027 23:59:59 UTC; path=/";
+
+--------------------------------------------------
+
+Reading Cookies
+---------------
+
+console.log(document.cookie);
+
+Output:
+
+username=Navin
+
+--------------------------------------------------
+
+Deleting a Cookie
+-----------------
+
+To delete a cookie, set its expiration date to a date in the past.
+
+document.cookie =
+"username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+
+--------------------------------------------------
+
+Advantages
+----------
+
+- Keeps users logged in
+- Remembers user preferences
+- Automatically sent to the server
+- Supported by all browsers
+
+--------------------------------------------------
+
+Limitations
+-----------
+
+- Very small storage (about 4 KB)
+- Not suitable for storing large amounts of data
+- Can be a security risk if not configured properly
+
+--------------------------------------------------
+
+Cookies vs Local Storage
+------------------------
+
+Cookies
+- About 4 KB of storage.
+- Automatically sent to the server with every request.
+- Mainly used for login sessions and authentication.
+
+Local Storage
+- About 5 MB to 10 MB of storage.
+- Not automatically sent to the server.
+- Mainly used to store application data such as settings, themes, and shopping carts.
+
+--------------------------------------------------
+
+Cookies vs Session Storage
+--------------------------
+
+Cookies
+- Can remain after the browser is closed (depending on expiration date).
+- Automatically sent to the server.
+
+Session Storage
+- Deleted when the browser tab is closed.
+- Not sent to the server.
+
+--------------------------------------------------
+
+Summary
+-------
+
+Feature                     Cookies
+-----------------------------------------------------
+Stored in Browser           Yes
+Sent to Server Automatically Yes
+Maximum Size                About 4 KB
+Used for Login Sessions     Yes
+Created by JavaScript       Yes
+Created by Server           Yes
+Can Expire                  Yes
