@@ -1,5 +1,34 @@
 function SubmitFunction(){
-    alert("hello navin");
+
+    var textName = document.getElementById("name");
+
+    var textAddress = document.getElementById("address")
+
+    var textMessage = document.getElementById("message")
+
+    if(textName.value == "") {
+        window.alert("Please enter name");
+    }else {
+        window.alert("Hello " + textName.value)
+    }
+
+    if(textAddress.value =="") {
+        window.alert("Please enter address");
+    }
+
+    if(textMessage.value == "") {
+        window.alert("Please enter a message");
+    }
+
+
+
+
+
+
+
+    return;
+
+
 }
 
 
