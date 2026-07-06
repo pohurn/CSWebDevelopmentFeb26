@@ -17,5 +17,4 @@ when user clicks on submit btn
 
 - if every field is not empty, when user clicks on submit, alert success
 
-
 */
