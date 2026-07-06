@@ -1,5 +1,18 @@
 function SubmitFunction(){
-    alert("hello navin");
+
+    var nameText = document.getElementById("name");
+    var addressText = document.getElementById("address");
+    var messageText = document.getElementById("message");
+
+
+    if(nameText.value == "" && addressText.value == "" && messageText.value == ""){
+         window.alert("Please fill in all the information.");
+    } else if(nameText.value != "" && (addressText.value == "" || messageText.value == "")){
+          window.alert("Hi " + nameText.value + ", please fill in the rest of the information.");
+    } else {
+          window.alert("Success! Your information has been submitted.");
+    }
+
 }
 
 
