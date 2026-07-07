@@ -1,6 +1,24 @@
-function SubmitFunction(){
-    alert("hello navin");
+function SubmitFunction() {
+
+    var name = document.getElementById("Sherif").value;
+    var address = document.getElementById("Address").value;
+    var message = document.getElementById("Message").value;
+
+    if (name == "" && address == "" && message == "") {
+        alert("Please fill in all the information.");
+    }
+    else if (name != "" && address == "" && message == "") {
+        alert("Hello " + name + ", please fill in your address and message.");
+    }
+    else if (name != "" && address != "" && message != "") {
+        alert("Success! Your information has been submitted.");
+    }
+    else {
+        alert("Please fill in all the information.");
+    }
+
 }
+
 
 
 /*
