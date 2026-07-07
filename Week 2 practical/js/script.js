@@ -2,14 +2,20 @@ var nameText = document.getElementById("input_name");
 var address = document.getElementById("input_address");
 var message = document.getElementById("input_message");
 
-// console.log("name:", nameText.value);
-
 function checkform() {
   if (nameText.value === "" && address.value === "" && message.value === "") {
     alert("please fill all the empty placeholders");
-  } else if (nameText.value !== "" && address.value === "") {
+  } else if (
+    nameText.value !== "" &&
+    address.value === "" &&
+    message.value === ""
+  ) {
     alert(`${nameText.value} please fill in the rest of the info`);
-  } else {
+  } else if (
+    nameText.value !== "" &&
+    address.value !== "" &&
+    message.value !== ""
+  ) {
     alert("Success");
   }
 }
