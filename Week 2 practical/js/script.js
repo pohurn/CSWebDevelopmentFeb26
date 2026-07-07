@@ -2,8 +2,8 @@ var nameText = document.getElementById("input_name");
 var address = document.getElementById("input_address");
 var message = document.getElementById("input_message");
 
-if (nameText.value == "") {
-  alert("please enter your name");
+if (nameText.value == "" && address.value == "") {
+  alert("please fill the empty places");
 } else {
   alert("success");
 }
