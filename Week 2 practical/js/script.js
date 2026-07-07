@@ -2,15 +2,17 @@ var nameText = document.getElementById("input_name");
 var address = document.getElementById("input_address");
 var message = document.getElementById("input_message");
 
-if (nameText.value == "" && address.value == "" && message.value == "") {
-  alert("please fill all the empty placeholders");
-} else {
-  alert("success");
-}
+// console.log("name:", nameText.value);
 
-// function SubmitFunction() {
-//   alert("Hello Acher");
-// }
+function checkform() {
+  if (nameText.value === "" && address.value === "" && message.value === "") {
+    alert("please fill all the empty placeholders");
+  } else if (nameText.value !== "" && address.value === "") {
+    alert(`${nameText.value} please fill in the rest of the info`);
+  } else {
+    alert("Success");
+  }
+}
 
 /*
 
