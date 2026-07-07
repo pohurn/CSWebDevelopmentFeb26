@@ -1,28 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Contact Form</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Form</h1>
+      <form>
+        <label>Name:</label><br />
+        <input id="input_name" type="text" name="name" /><br />
 
-<div class="container">
-    <h1>Contact Form</h1>
-    <form>
-        <label>Name:</label><br>
-        <input type="text" name="name"><br>
+        <label>Address:</label><br />
+        <input id="input_address" type="address" name="address" /><br />
 
-        <label>Address:</label><br>
-        <input type="text" name="address"><br>
+        <label>Message:</label><br />
+        <textarea id="input_message" name="message"></textarea><br />
 
-        <label>Message:</label><br>
-        <textarea name="message"></textarea><br>
+        <button type="submit" onclick="checkform()">Submit</button>
+      </form>
+    </div>
 
-        <button type="submit" onclick="SubmitFunction()">Submit</button>
-    </form>
-</div>
-
-<script src="./js/script.js"></script>
-
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
