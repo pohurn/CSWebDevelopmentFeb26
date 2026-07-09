@@ -1,11 +1,62 @@
 
+#MainRow{
+    height: 200px;
+    text-align: center;
 
-#div_ten{
-    background-color: rebeccapurple;
-    height: 500px;
+}
+
+#ThirdRow{
+        height: 200px;
+    text-align: center;
+}
+
+#FourthRow{
+        height: 200px;
+    text-align: center;
+}
+
+#BoxGrey{background-color: gray;}
+#BoxGreen{background-color: green;}
+#BoxLightGreen{background-color: greenyellow;}
+
+#BoxOrange{
+    background-color: orange;
+}
+
+#BoxViolet{
+    background-color: violet;
+}
+
+.centerItems{
+display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; 
+}
+
+#BoxRed{
+    background-color: red;
+
+}
+#secondbox{
+   height: 150px;
+    text-align: center; 
+}
+
+#BoxBlue{
+    background-color: blue;
+
+}
+#BoxYellow{
+    background-color: yellow;
+
 }
 
 #div_two{
     background-color: red;
+    height: 500px;
+}
+
+#div_ten{
+    background-color: rebeccapurple;
     height: 500px;
 }
