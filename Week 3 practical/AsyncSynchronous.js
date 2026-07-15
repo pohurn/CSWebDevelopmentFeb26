@@ -21,24 +21,24 @@
 
 // setTimeout(() => {
 //     console.log("Timer 1");
-// }, 499);
+// }, 1000);
 
 // setTimeout(() => {
 //     console.log("Timer 2");
-// }, 500);
+// }, 0);
 
 // console.log("End");
 
 
 
-// //EXAMPLE TWO - BUSY TASKS
+//EXAMPLE TWO - BUSY TASKS
 
 // console.log("Start");
 // setTimeout(() => {
 //     console.log("Timer");
 // }, 0);
 // // Simulate a long task
-// for (let i = 0; i < 10000; i++) {
+// for (let i = 0; i < 1; i++) {
 //     // Busy work
 //     console.log(i);
 // }
@@ -61,16 +61,13 @@
 //EXAMPLE FOUR - ASYNC/ AWAIT
 
 // Function marked as async
-// async function getUser() {
+//  async function getUser() {
 
 //     console.log("Fetching data...");
-
 //     // Wait until fetch finishes
 //     const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
-
 //     // Wait until JSON conversion finishes
 //     const data = await response.json();
-
 //     console.log(data);
 // }
 
@@ -103,12 +100,12 @@
 // execute(greet);
 
 
-//PROMISE
+// //PROMISE
 
-// Create a Promise
+// // Create a Promise
 // const myPromise = new Promise((resolve, reject) => {
 
-//     let success = false;
+//     let success = true;
 
 //     if (success) {
 //         resolve("Operation Successful!");
@@ -118,7 +115,7 @@
 
 // });
 
-// // Handle the result
+// // // Handle the result
 // myPromise
 //     .then(result => {
 //         //we got a success above that's why it goes in then (because we got a value)
@@ -151,32 +148,19 @@
 
 // CHANING PROMISES
 
-// function getNumber() {
+function getNumber() {
+    return Promise.resolve(8);
+}
 
-//     return Promise.resolve(10);
-
-// }
-
-// getNumber()
-
-//     .then(number => {
-
-//         console.log(number);
-
-//         return number * 2;
-
-//     })
-
-//     .then(result => {
-
-//         console.log(result);
-
-//         return result + 5;
-
-//     })
-
-//     .then(finalResult => {
-
-//         console.log(finalResult);
-
-//     });
+getNumber()
+    .then(number => {
+        console.log(number);
+        return number * 2;
+    })
+    .then(result => {
+        console.log(result);
+        return result + 5;
+    })
+    .then(finalResult => {
+        console.log(finalResult);
+    });
