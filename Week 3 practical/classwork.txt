@@ -1,0 +1,22 @@
+
+Exercise 1 – If...Else
+Question:
+
+Create a variable called temperature with the value 35.
+
+Display:
+
+"Cold" if the temperature is below 20
+"Warm" if the temperature is between 20 and 30
+"Hot" if the temperature is above 30
+
+
+
+Exercise 2 – Try...Catch
+Question : write a function where there is a try Catch
+
+Exercise 3 - Callback
+Question: write a function where callback is being used
+
+Exercise 4: - Promises
+Question: write a function where promises is being used.
