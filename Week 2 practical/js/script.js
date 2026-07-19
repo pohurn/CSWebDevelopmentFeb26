@@ -1,24 +1,19 @@
-var nameText = document.getElementById("input_name");
-var address = document.getElementById("input_address");
-var message = document.getElementById("input_message");
+function SubmitFunction(){
+    // alert("hello navin");
 
-function checkform() {
-  if (nameText.value === "" && address.value === "" && message.value === "") {
-    alert("please fill all the empty placeholders");
-  } else if (
-    nameText.value !== "" &&
-    address.value === "" &&
-    message.value === ""
-  ) {
-    alert(`${nameText.value} please fill in the rest of the info`);
-  } else if (
-    nameText.value !== "" &&
-    address.value !== "" &&
-    message.value !== ""
-  ) {
-    alert("Success");
-  }
+
+    var nameText = document.getElementById("sherif");
+
+    if(nameText.value == ""){
+window.alert("eror");
+    }else{
+window.alert("ok");
+    }
+
+
+
 }
+
 
 /*
 
@@ -28,7 +23,7 @@ Logic to write (15 mins)
 
 when user clicks on submit btn
 
-- if name, address and message is empty, alert user to fill in all the infos
+- if name, address and message are empty, alert user to fill in all the infos
 
 - if name is not empty but the rest are empty, alert user by their name and tell them to fill in the infos
 

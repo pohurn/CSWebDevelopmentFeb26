@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navin's HomePage</title>
-
+    <link href="./css/test.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -12,46 +12,74 @@
 
     <div class="container">
         <div class="row">
-    <!-- first article -->
-    <article class="col-sm-12 col-md-6 col-lg-4">
-        <h1>My Article</h1> <br/>
-        <p>
-            Hello. My name is navin.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-             in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </article>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#FourthRow">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        </div>
+        
+        <div class="row" id="MainRow">
+            <div class="centerItems col-md-7" id="BoxOrange">
+                <h1>ORANGE</h1>
+            </div>
+            <div class="centerItems col-md-5" id="BoxViolet">
+                <h1>VIOLET</h1>
+            </div>
+        </div>
+        <div class="row" style="height: 50px; background-color: black;">
 
-    <!-- second article -->
-    <article class="col-sm-12 col-md-6 col-lg-4">
-        <h1>My Article</h1> <br/>
-        <p>
-            Hello. My name is navin.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-             in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </article>
+        </div>
+        <div class="row" id="secondbox">
+            <div class="centerItems col-md-4" id="BoxRed">
+                <h1>RED</h1>
+            </div>
+            <div class="centerItems col-md-4" id="BoxBlue">
+                <h1>BLUE</h1>
+            </div>
+            <div class="centerItems col-md-4" id="BoxYellow">
+                <h1>YELLOW</h1>
+            </div>
+        </div>
+         <div class="row" style="height: 50px; background-color: black;">
 
-    <!-- third article -->
-    <article class="col-sm-12 col-md-6 col-lg-4">
-        <h1>My Article</h1> <br/>
-        <p>
-            Hello. My name is navin.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-             in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </article>
+        </div>
+        <div class="row" id="ThirdRow">
+            <div class="centerItems col-md-7" id="BoxGrey">
+                <h1>COL 7 ONLY</h1>
+            </div>
+            <div class="centerItems col-md-5">
+                <h1>COL 5</h1>
+            </div>
+        </div>
+        <div class="row" id="FourthRow">
+            <div class="centerItems col-md-6" id="BoxGreen">
+                <h1>COL 6</h1>
+            </div>
+            <div class="centerItems col-md-6" id="BoxLightGreen">
+                <h1>COL 6</h1>
+            </div>
         </div>
     </div>
-
-
-<!-- <div class="col-sm-12 col-md-6 col-lg-4">
-
-</div> -->
-
 
 <!-- Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
