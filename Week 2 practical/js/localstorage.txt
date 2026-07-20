@@ -1,0 +1,214 @@
+===========================
+LOCAL STORAGE IN JAVASCRIPT
+===========================
+
+What is Local Storage?
+----------------------
+Local Storage is a feature provided by web browsers that allows websites to store data directly on the user's computer (inside the browser).
+
+The data remains available even after:
+- Refreshing the page
+- Closing the browser
+- Restarting the computer
+
+The data is only removed if:
+- The website deletes it.
+- The user clears the browser's storage.
+
+--------------------------------------------------
+
+Real-life Example
+-----------------
+Imagine your browser has a small notebook.
+
+Whenever a website wants to remember something, it writes it into that notebook.
+
+Examples:
+- User's name
+- Dark mode preference
+- Shopping cart
+- Draft messages
+- Game score
+
+The next time the website opens, it reads the notebook and restores the information.
+
+--------------------------------------------------
+
+Why use Local Storage?
+----------------------
+- Save user preferences
+- Remember login settings (not passwords)
+- Save form data
+- Store shopping cart items
+- Store game scores
+
+--------------------------------------------------
+
+Save Data
+---------
+
+localStorage.setItem("name", "Navin");
+
+This stores:
+
+name = Navin
+
+--------------------------------------------------
+
+Read Data
+---------
+
+let name = localStorage.getItem("name");
+
+console.log(name);
+
+Output:
+
+Navin
+
+--------------------------------------------------
+
+Remove One Item
+---------------
+
+localStorage.removeItem("name");
+
+--------------------------------------------------
+
+Remove Everything
+-----------------
+
+localStorage.clear();
+
+--------------------------------------------------
+
+Example
+-------
+
+Save data entered in a contact form.
+
+localStorage.setItem("name", "John");
+localStorage.setItem("address", "Rose Hill");
+localStorage.setItem("message", "Hello");
+
+Later, retrieve the data:
+
+document.getElementById("name").value =
+localStorage.getItem("name");
+
+--------------------------------------------------
+
+What Can Local Storage Store?
+-----------------------------
+
+Local Storage stores STRINGS only.
+
+Example:
+
+localStorage.setItem("city", "Port Louis");
+
+Numbers are automatically stored as strings.
+
+Example:
+
+localStorage.setItem("age", 20);
+
+--------------------------------------------------
+
+Storing Objects
+---------------
+
+Objects must first be converted into JSON.
+
+let student = {
+    name: "John",
+    age: 20
+};
+
+localStorage.setItem(
+    "student",
+    JSON.stringify(student)
+);
+
+Retrieve the object:
+
+let student = JSON.parse(
+    localStorage.getItem("student")
+);
+
+console.log(student.name);
+
+--------------------------------------------------
+
+Advantages
+----------
+
+- Easy to use
+- No database required
+- Works offline
+- Data survives page refresh
+- Data remains after closing the browser
+- Faster than sending data to a server
+
+--------------------------------------------------
+
+Limitations
+-----------
+
+- Stores strings only
+- Not suitable for passwords or sensitive information
+- Data is only available in the user's browser
+- Storage limit is about 5 MB to 10 MB depending on the browser
+
+--------------------------------------------------
+
+Local Storage vs Session Storage
+--------------------------------
+
+Local Storage
+- Data survives page refresh.
+- Data survives closing and reopening the browser.
+- Good for long-term storage.
+
+Session Storage
+- Data survives page refresh.
+- Data is deleted when the browser tab is closed.
+- Good for temporary storage.
+
+--------------------------------------------------
+
+Local Storage vs Cookies
+------------------------
+
+Local Storage
+- Stores about 5–10 MB.
+- Data is NOT automatically sent to the server.
+- Mainly used for saving application data.
+
+Cookies
+- Stores about 4 KB.
+- Automatically sent to the server with every request.
+- Mainly used for login sessions and authentication.
+
+--------------------------------------------------
+
+Summary
+-------
+
+Method                              Purpose
+--------------------------------------------------------------
+localStorage.setItem(key, value)    Save data
+localStorage.getItem(key)           Read data
+localStorage.removeItem(key)        Delete one item
+localStorage.clear()                Delete all data
+JSON.stringify()                    Convert object to string
+JSON.parse()                        Convert string back to object
+
+--------------------------------------------------
+
+Simple Definition
+-----------------
+
+Local Storage is a browser feature that allows websites to save data on the user's computer so that it can be retrieved later,
+ even after refreshing or reopening the browser. It is commonly used to store user preferences, form data, shopping carts, 
+ and other non-sensitive information.
